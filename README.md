@@ -1,5 +1,13 @@
 # 이진화 교란을 이용한 손 엑스레이 영상으로부터 랜드마크 검출
 
+## 데이터셋
+- Digital Hand Atlas 데이터셋을 사용한다.
+- [**해당 링크**](https://ipilab.usc.edu/computer-aided-bone-age-assessment-of-children-using-a-digital-hand-atlas-2/)에 접속하여
+Download Option 2의 파일을 다운로드한다.
+- 다운받은 파일 'Digital Hand Atlas.zip'을 WebProject/Dataset 폴더 내에 압축 해제한다.
+- WebProject/code/etc/Generate_Laplace.py를 실행한다.
+- WebProject/images/Laplace 폴더가 생성되고 폴더 내에 원본 이미지와 해당 이미지에 따른 Laplace Heatmap이 생성된다.
+
 ## 코드 수행 과정
 - WebProject/code/main/main.py를 연다.
 - 해당 파일의 device 변수를 수정하여 코드를 실행할 장치를 설정한다.
@@ -7,7 +15,7 @@
 - num_epochs 변수를 조정하여 epoch를 설정한다.
 - lr 변수를 조정하여 learning rate를 설정한다.
 - 코드를 실행한다.  
- 코드를 실행할 경우, WebProject/models/Laplace/setup1/'model_folder변수 값' 폴더가 새로
+ 코드를 실행할 경우, WebProject/models/Laplace/setup1/'모델명' 폴더가 새로
  생성되며 해당 폴더 내에 학습된 모델이 저장된다.
  
 ### 학습된 모델의 결과 확인
